@@ -10,7 +10,7 @@ It should be noted that the tool is not a "push the button - check everything fo
 Therefore, we encourage you to make quick manual checks while relying on the tool. Tool will identify 99% of "correct" cases by highlighting this or that page element in green. It will also attempt to identify issues/errors and most likely will succeed in it in 70-80% of cases. The rest 20-30% should be checked by you manually.
 
 
-If you have been working with PMC corrections tool - CheeTah, you probably will find lots of checks to be similar. However, note that a few changes have been made to CheeTah checks (mostly in checks output). 
+If you have been working with PMC corrections tool - PuMa, you probably will find lots of checks to be similar. However, note that a few changes have been made to PuMa checks (mostly in checks output). 
 
 Also, we have added Tabs interface - new concept which allows to gather all elements of the check together on one tab and analyse them there. Please have a look at Headers, Figures and Tables checks below for more detail about Tabs.
 
@@ -21,16 +21,16 @@ Also, we have added Tabs interface - new concept which allows to gather all elem
 Download
 --------
 
-You can download CheeTah `here`_.
+You can download PuMa `here`_.
 
 
 Interface
 ---------
-You can use CheeTah to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML". You just need to paste pii in "Enter PII here" field and press "Go".
+You can use PuMa to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML". You just need to paste pii in "Enter PII here" field and press "Go".
 
-If "Open in the same tab" flag is active then CheeTah will open article in the same tab. Otherwise, it will open it in a new tab.
+If "Open in the same tab" flag is active then PuMa will open article in the same tab. Otherwise, it will open it in a new tab.
 
-If you open pii pages using CheeTah, then you may like to run the check automatically when the page is loaded. To do that you can activate "Run check automatically" flag before pressing on "Go" button.
+If you open pii pages using PuMa, then you may like to run the check automatically when the page is loaded. To do that you can activate "Run check automatically" flag before pressing on "Go" button.
 
 If you prefer running check manually, then deactivate "Run check automatically" flag and use "Run" button to launch the check.
 
@@ -225,7 +225,7 @@ TO RUN TABLES CHECK, CLICK ON TABLES TAB.
 **What PuMa does:**
 	PuMa puts all the lines containing "Supplementary" word on the tab. The idea is to have all callouts to supplementary materials on one tab, so that you can manually match them with supplementary files.
 
-**What PuMa does:**
+**What PuMa does not do:**
 	PuMa does not make any checks related to supplementary materials. All the checks should be done manually.
 
 
@@ -233,7 +233,60 @@ TO RUN TABLES CHECK, CLICK ON TABLES TAB.
 12. References
 ==============
 
+**What PuMa does:**
+	PuMa tries to find duplicate references. 
 
+		If no duplicates are found, it injects the message "No duplicate references found" right below the "References" header.
+
+		Otherwise, it injects a message with duplicate reference numbers.
+
+	PuMa cheks Author list:
+		If PuMa is able to find and validate all names of authors then it marks full author list in green.
+		If PuMa finds an issue in author name(s) it marks that name(s) in amber.
+
+		If PuMa is able to count names of authors and verify that that number is OK, then it marks **reference number** in green.
+		If PuMa is not able to count names of authors, then it marks **reference number** in red.
+
+	PuMa checks Citation data (in-house jourlans):
+
+		PuMA checks "Citation Data" for in-house journals (Oncotarget, Aging, Genes and Cancer, Oncoscience)
+		It tries to find in-house journal name and if PuMa finds it, it checks the format of citation data (year, volume, pages. DOI)
+
+		If citation data format is OK and correct DOI is present, PuMa marks citation data in green.
+		Otherwise it does not mark citation data in any color at all.
+
+		Tool also tries to match names of in-house journals. For Oncotarget and Oncosience it ties to find "ocnotarget" and "ocnoscience".
+		For Aging (Albany NY) it tries to find "aging" word. For Genes Cancer it tries to find "genes cancer, genescancer, genes&cancer, genes &cancer, genes& cancer, genes & cancer, genesandcancer, genesand cancer, genes andcancer, genes and cancer" words. The search for words is case insensitive.
+
+		If any of those words are fond in reference, tool marks them in yellow.
+
+		If you find words marked in yellow, pay close attention to the reference, as it can be incorrectly formatted reference for in-house journal.
+
+	PuMa checks Citation data (all other journals):
+
+		PuMa checks journal name (both full and abbreviated) to be written the same way as on PubMed site. 
+
+			If journal is written incorrectly (or is not indexed by PubMed), then PuMa will make a suggestion regarding correct spelling. In this case journal title will be marked in dark yellow.
+
+			If journal title was found on the PubMed, then PuMa will mark it in green.
+
+		PuMa checks the format of citation data. 
+
+			If one or more elements are not comliant with the standards, then PuMa will highlight such element(s) in amber.
+
+			PuMA will mark all correct elements in green.
+
+	PuMa marks all instances of [PII] and [Internet] in amber.
+
+	
+**What PuMa does not do:**
+	PuMa does not check books, report and websites references.
+
+	PuMa does not check "Ahead of print" references (however, certain elements can be marked in green correctly as a side effect of other checks).
+
+	PuMa does not check anything described in "References: General Checks" section of the PubMed standards (except for [PII] and [INTERNET]).
+
+	PuMa does not check title of the article in the reference.
 
 
 
