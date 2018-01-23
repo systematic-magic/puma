@@ -140,6 +140,7 @@ PuMa checks:
 	.. image:: /_static/puma_abbreviations_green.png
 	   :scale: 50%
 	   :alt: PuMa Interface
+	   
 
 	.. image:: /_static/puma_abbreviations_amber.png
 	   :scale: 50%
