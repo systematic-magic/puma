@@ -259,6 +259,7 @@ PuMa checks:
 	   :alt: PuMa Interface
 
 
+
 PuMa does not check:
 	It does not do any of the Figues checks except for matching callouts with Figure IDs.
 
