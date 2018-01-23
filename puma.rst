@@ -87,6 +87,10 @@ PuMa checks:
 	PuMa highlighs in amber authors having no affiliation numbers.
 	PuMa shows error message (in amber) if any of the following issues found: author names without affiliation  numbers, wrong order of affiliation text numbers, affiliation number in wrong format and texts without affiliation numbers.
 
+	.. image:: /_static/puma_affiliation_errors.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+
 PuMa does not check:
 	PuMa does not check affiliation text for validity (elements, separators, 2 affliation texts in one line etc)
 
@@ -259,7 +263,7 @@ PuMa checks:
 		Otherwise, it injects a message with duplicate reference numbers.
 
 	PuMa cheks Author list:
-	
+
 		If PuMa is able to find and validate all names of authors then it marks full author list in green.
 		If PuMa finds an issue in author name(s) it marks that name(s) in amber.
 
