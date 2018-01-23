@@ -217,7 +217,7 @@ PuMa checks:
 	   :scale: 50%
 	   :alt: PuMa Interface
 	|
-	
+
 	.. image:: /_static/puma_headers_issue2.png
 	   :scale: 50%
 	   :alt: PuMa Interface
@@ -317,6 +317,19 @@ PuMa checks:
 
 		Otherwise, it injects a message with duplicate reference numbers.
 
+		.. image:: /_static/puma_duplicate_refs.png
+		:scale: 50%
+		:alt: PuMa Interface
+
+		.. image:: /_static/puma_duplicate_refs_ex1.png
+		:scale: 50%
+		:alt: PuMa Interface
+
+		.. image:: /_static/puma_duplicate_refs_ex2.png
+		:scale: 50%
+		:alt: PuMa Interface
+
+
 	PuMa cheks Author list:
 
 		If PuMa is able to find and validate all names of authors then it marks full author list in green.
@@ -355,6 +368,9 @@ PuMa checks:
 			PuMA will mark all correct elements in green.
 
 	PuMa marks all instances of [PII] and [Internet] in amber.
+
+
+	
 
 	
 PuMa does not check:
