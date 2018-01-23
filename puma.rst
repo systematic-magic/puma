@@ -122,6 +122,10 @@ PuMa checks:
 
 	PuMa also checks whether article has "Special Section" keywords (in this case it caters for 5 words + special sections words)
 
+	.. image:: /_static/puma_keywords.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+
 PuMa does not check:
 	PuMa does not check the case or spelling of keywords.
 
