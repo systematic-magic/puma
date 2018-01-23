@@ -99,7 +99,7 @@ PuMa checks:
 		If tool finds matching names, it **underlines** found pair(s) in green, otherwise it highlights only "Corresponding to" name in amber.
 
 
-PuMa does not check:*
+PuMa does not check:
 	PuMa does not check validity of email address.
 	PuMa does not check format of correspondence line format (separators, correct spelling of "email" etc).
 
@@ -139,10 +139,12 @@ PuMa does not check:
 
 PuMa checks:
 	PuMa checks the spelling and validates the dates.
+		
 		If date is correct, it marks it in green. 
 		Otherwise it highlights it in amber.
 
 	PuMA checks whether Received date is smaller than Accepted date and Accepted date is smaller than Published date.
+		
 		If everything is correct, dates are marked in green. 
 		Otherwise in amber.
 
@@ -157,6 +159,7 @@ PuMa checks:
 		Otherwise, it injects a message with numbers of missed callouts and/or references.
 
 	PuMa checks the format of callouts. 
+		
 		If callout is not compliant with PubMed standards, it injects an error message - "Found (formatting) errors in callouts:" and specifies problem callouts.
 
 
@@ -256,6 +259,7 @@ PuMa checks:
 		Otherwise, it injects a message with duplicate reference numbers.
 
 	PuMa cheks Author list:
+	
 		If PuMa is able to find and validate all names of authors then it marks full author list in green.
 		If PuMa finds an issue in author name(s) it marks that name(s) in amber.
 
