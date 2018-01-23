@@ -180,7 +180,7 @@ PuMa checks:
 	.. image:: /_static/puma_callouts_format_sample.png
 	   :scale: 50%
 	   :alt: PuMa Interface
-
+|
 
 	PuMa checks the format of callouts. 
 		
