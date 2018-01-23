@@ -126,6 +126,10 @@ PuMa checks:
 	   :scale: 50%
 	   :alt: PuMa Interface
 
+	.. image:: /_static/puma_keywords1.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+
 PuMa does not check:
 	PuMa does not check the case or spelling of keywords.
 
