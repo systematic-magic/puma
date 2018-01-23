@@ -140,7 +140,7 @@ PuMa checks:
 	.. image:: /_static/puma_abbreviations_green.png
 	   :scale: 50%
 	   :alt: PuMa Interface
-	   
+
 
 	.. image:: /_static/puma_abbreviations_amber.png
 	   :scale: 50%
@@ -172,6 +172,15 @@ PuMa checks:
 		
 		If there is a full match, the tool injects a message that number of missing callouts and references equals to zero.
 		Otherwise, it injects a message with numbers of missed callouts and/or references.
+
+	.. image:: /_static/puma_callouts_format_error.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+
+	.. image:: /_static/puma_callouts_format_sample.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+
 
 	PuMa checks the format of callouts. 
 		
