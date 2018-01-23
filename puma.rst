@@ -10,7 +10,7 @@ It should be noted that the tool is not a "push the button - check everything fo
 Therefore, we encourage you to make quick manual checks while relying on the tool. Tool will identify 99% of "correct" cases by highlighting this or that page element in green. It will also attempt to identify issues/errors and most likely will succeed in it in 70-80% of cases. The rest 20-30% should be checked by you manually.
 
 
-If you have been working with PMC corrections tool - PuMa, you probably will find lots of checks to be similar. However, note that a few changes have been made to PuMa checks (mostly in checks output). 
+If you have been working with PMC corrections tool - CheeTah, you probably will find lots of checks to be similar. However, note that a few changes have been made to CheeTah checks (mostly in checks output). 
 
 Also, we have added Tabs interface - new concept which allows to gather all elements of the check together on one tab and analyse them there. Please have a look at Headers, Figures and Tables checks below for more detail about Tabs.
 
@@ -21,11 +21,19 @@ Also, we have added Tabs interface - new concept which allows to gather all elem
 Download
 --------
 
-You can download PuMa `here`_.
+You can download PuMa `here`_.	
 
 
 Interface
 ---------
+
+PuMa tool interface is depicted below.
+
+.. image:: /_static/puma_interface.png
+   :scale: 50%
+   :alt: PuMa Interface
+
+
 You can use PuMa to navigate to pii HTML page directly. No more copy/paste in the URL of other article and clicking on "HTML". You just need to paste pii in "Enter PII here" field and press "Go".
 
 If "Open in the same tab" flag is active then PuMa will open article in the same tab. Otherwise, it will open it in a new tab.
