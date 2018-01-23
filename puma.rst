@@ -69,8 +69,7 @@ PuMa checks:
 		Otherwise - in amber.
 
 PuMa does not check:
-	There is no special check to verify the separators. However, as a side effect of name check, it can highlight all non-comliant separators in amber.
-
+	There is no special check to verify the separators.
 
 
 3. Affiliations and Author Notes
@@ -102,6 +101,9 @@ PuMa checks:
 	
 		If tool finds matching names, it **underlines** found pair(s) in green, otherwise it highlights only "Corresponding to" name in amber.
 
+	.. image:: /_static/puma_correspondence_to.png
+	   :scale: 50%
+	   :alt: PuMa Interface
 
 PuMa does not check:
 	PuMa does not check validity of email address.
