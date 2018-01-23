@@ -10,6 +10,10 @@ It should be noted that the tool is not a "push the button - check everything fo
 Therefore, we encourage you to make quick manual checks while relying on the tool. Tool will identify 99% of "correct" cases by highlighting this or that page element in green. It will also attempt to identify issues/errors and most likely will succeed in it in 70-80% of cases. The rest 20-30% should be checked by you manually.
 
 
+If you have been working with PMC corrections tool - CheeTah, you probably will find lots of checks to be similar. However, note that a few changes have been made to CheeTah checks (mostly in checks output). 
+
+Also, we have added Tabs interface - new concept which allows to gather all elements of the check together on one tab and analyse them there. Please have a look at Headers, Figures and Tables checks below for more detail about Tabs.
+
 .. NOTE::
 	
 	If you find isses/errors which were not picked up by PuMa, please report such cases together with PII number to Alex via email.
@@ -103,10 +107,11 @@ Functionality
 
 5. Abbreviations
 ================
+
 **What PuMa does:**
 	PuMa checks whether allowed separators are used (: or , with ;).
 
-	PuMa checks whether number of keywords is smaller or equal to 5.
+	PuMa checks whether number of abbreviation pairs is smaller or equal to 5.
 
 	If checks are successful, it injects - "number of abbreviations is OK" message in green.
 	Otherwise it injects en error message in amber to the page.
@@ -114,5 +119,62 @@ Functionality
 
 **What PuMa does not do:***
 	PuMa does not check the case or spelling of abbreviations.
+
+6. Received, Accepted, Published dates
+======================================
+
+**What PuMa does:**
+	PuMa checks the spelling and validates the dates.
+	If date is correct, it marks it in green. Otherwise it highlights it in amber.
+
+	PuMA checks whether Received date is smaller than Accepted date and Accepted date is smaller than Published date.
+	If everything is correct, dates are marked in green. Otherwise in amber.
+
+
+6. Callouts vs references
+=========================
+
+**What PuMa does:**
+	PuMa tries to match callouts with references.
+	If there is a full match, the tool injects a message that number of missing callouts and references equals to zero.
+	Otherwise, it injects a message with numbers of missed callouts and/or references.
+
+	PuMa checks the format of callouts. If callout is not compliant with PubMed standards, it injects an error message - "Found (
+	formatting) errors in callouts:" and specifies problem callouts.
+
+
+7. Headers
+==========
+Headers is a check which appears in Tabs by default. Headers check is a table with all headers in the article.
+That table contains headers in the same format and case, as presented in the article itself.
+
+
+**What PuMa does:**
+	PuMa checks each header against PubMed standards: format, position among other headers, mandatory/optional header, spelling.
+	
+	If check is successful, then green tick is placed in front of the corresponding header.
+	
+	If check is not successful, the red cross mark is placed in front of the corresponding header and error message is injected in "Problem description, if found" column.
+	
+	There can be situations (generally when we are checking subheaders), when PuMa requires your attention and input to make a decision whether header is OK or not. In such cases it puts amber exclamation mark in front of the header. You need to validate each such header manually.
+
+	PuMa checks whether all mandatory headers are present in the paper (in accordance with PubMed standards).
+
+	If all mandatory headers are present, then it injects the following message below the table: "Missing mandatory headings: None".
+
+	If there are missing headers, then it injects a table with missed mandatory headers below the "check table".
+
+
+**What PuMa does not do:**
+	PuMa does not check the validity of subheaders. This task should be done manually.
+
+
+7. Figures
+==========
+
+Since "figures" code of article page is not standardised and greatly varies from vendor to vendor, "Figures check" is presented as interface, which speeds up and simplifies manual checking. 
+
+**What PuMa does:**
+
 
 
