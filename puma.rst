@@ -51,10 +51,10 @@ Functionality
 1. Article Title
 ================
 
-**What PuMa does:**
+PuMa checks:
 	PuMa checks spelling and underlines (red dashed line) suspicious words.
 
-**What PuMa does not do:**
+PuMa does not check:
 	PuMa does not check whether there are words in italics in the tite. 
 	It does not check correct case of scientific terms.
 
@@ -62,129 +62,136 @@ Functionality
 2. Author List
 ==============
 
-**What PuMa does:**
+PuMa checks:
 	PuMa checks the validity of author names (see standards for more detail).
-	If name is valid, tool highlights it is green. Otherwise - in amber.
+		
+		If name is valid, tool highlights it is green. 
+		Otherwise - in amber.
 
-**What PuMa does not do:**
+PuMa does not check:
 	There is no special check to verify the separators. However, as a side effect of name check, it can highlight all non-comliant separators in amber.
 
 
 
-2. Affiliations and Author Notes
+3. Affiliations and Author Notes
 ================================
 
-**What PuMa does:**
+PuMa checks:
 	PuMa checks spelling and underlines (red dashed line) suspicious words.
 
-	PuMa matches author affiliation numbers with affiliation texts. It highlights all found matches in green. Mismatches are highlighted in amber.
+	PuMa matches author affiliation numbers with affiliation texts. 
+
+		It highlights all found matches in green. 
+		Mismatches are highlighted in amber.
 
 	PuMa highlighs in amber authors having no affiliation numbers.
-	PuMa shows error message (in amber) if any of the following issues found: author names without affiliation  numbers, wrong order of affiliation text numbers, affiliation number in wrong format and texts without affiliation numbers
+	PuMa shows error message (in amber) if any of the following issues found: author names without affiliation  numbers, wrong order of affiliation text numbers, affiliation number in wrong format and texts without affiliation numbers.
 
-**What PuMa does not do:***
+PuMa does not check:
 	PuMa does not check affiliation text for validity (elements, separators, 2 affliation texts in one line etc)
 
-3. Correspondence to:
+4. Correspondence to:
 =====================
 
-**What PuMa does:**
-	PuMa tries to match name(s) of author(s) in "Correspondence to:" section with list of authors in front matter. 
-	If tool finds matching names, it **underlines** found pair(s) in green, otherwise it highlights only "Corresponding to" name in amber.
-
-
-**What PuMa does not do:***
-	PuMa does not check validity of email address.
+PuMa checks:
+	PuMa tries to match name(s) of author(s) in "Correspondence to:" section with a list of authors in front matter. 
 	
+		If tool finds matching names, it **underlines** found pair(s) in green, otherwise it highlights only "Corresponding to" name in amber.
+
+
+PuMa does not check:*
+	PuMa does not check validity of email address.
 	PuMa does not check format of correspondence line format (separators, correct spelling of "email" etc).
 
-4. Keywords
+5. Keywords
 ===========
 
-**What PuMa does:**
+PuMa checks:
 	PuMa checks whether allowed separator is used (, or ;).
 
 	PuMa checks number of keywords.
-	If number equals or is smaller than 5, it injects a message in green - "number of keywords is OK".
-	Otherwise, it injects error message trying to provide details about the issue.
+		
+		If number equals or is smaller than 5, it injects a message in green - "number of keywords is OK".
+		Otherwise, it injects error message trying to provide details about the issue.
 
 	PuMa also checks whether article has "Special Section" keywords (in this case it caters for 5 words + special sections words)
 
-**What PuMa does not do:***
+PuMa does not check:
 	PuMa does not check the case or spelling of keywords.
 
-5. Abbreviations
+6. Abbreviations
 ================
 
-**What PuMa does:**
+PuMa checks:
 	PuMa checks whether allowed separators are used (: or , with ;).
 
 	PuMa checks whether number of abbreviation pairs is smaller or equal to 5.
 
-	If checks are successful, it injects - "number of abbreviations is OK" message in green.
-	Otherwise it injects en error message in amber to the page.
+		If checks are successful, it injects - "number of abbreviations is OK" message in green.
+		Otherwise it injects en error message in amber to the page.
 
 
-**What PuMa does not do:***
+PuMa does not check:
 	PuMa does not check the case or spelling of abbreviations.
 
-6. Received, Accepted, Published dates
+7. Received, Accepted, Published dates
 ======================================
 
-**What PuMa does:**
+PuMa checks:
 	PuMa checks the spelling and validates the dates.
-	If date is correct, it marks it in green. Otherwise it highlights it in amber.
+		If date is correct, it marks it in green. 
+		Otherwise it highlights it in amber.
 
 	PuMA checks whether Received date is smaller than Accepted date and Accepted date is smaller than Published date.
-	If everything is correct, dates are marked in green. Otherwise in amber.
+		If everything is correct, dates are marked in green. 
+		Otherwise in amber.
 
 
-7. Callouts vs references
+8. Callouts vs references
 =========================
 
-**What PuMa does:**
+PuMa checks:
 	PuMa tries to match callouts with references.
-	If there is a full match, the tool injects a message that number of missing callouts and references equals to zero.
-	Otherwise, it injects a message with numbers of missed callouts and/or references.
+		
+		If there is a full match, the tool injects a message that number of missing callouts and references equals to zero.
+		Otherwise, it injects a message with numbers of missed callouts and/or references.
 
-	PuMa checks the format of callouts. If callout is not compliant with PubMed standards, it injects an error message - "Found (
-	formatting) errors in callouts:" and specifies problem callouts.
+	PuMa checks the format of callouts. 
+		If callout is not compliant with PubMed standards, it injects an error message - "Found (formatting) errors in callouts:" and specifies problem callouts.
 
 
-8. Headers
+9. Headers
 ==========
-Headers is a check which appears in Tabs by default. Headers check is a table with all headers in the article.
+Headers check is a default Tab. Headers check is a table which contains all article headers.
 That table contains headers in the same format and case, as presented in the article itself.
 
 
-**What PuMa does:**
+PuMa checks:
 	PuMa checks each header against PubMed standards: format, position among other headers, mandatory/optional header, spelling.
 	
-	If check is successful, then green tick is placed in front of the corresponding header.
-	
-	If check is not successful, the red cross mark is placed in front of the corresponding header and error message is injected in "Problem description, if found" column.
+		If check is successful, then green tick is placed in front of the corresponding header.
+		If check is not successful, the red cross mark is placed in front of the corresponding header and error message is injected in "Problem description, if found" column.
 	
 	There can be situations (generally when we are checking subheaders), when PuMa requires your attention and input to make a decision whether header is OK or not. In such cases it puts amber exclamation mark in front of the header. You need to validate each such header manually.
 
 	PuMa checks whether all mandatory headers are present in the paper (in accordance with PubMed standards).
 
-	If all mandatory headers are present, then it injects the following message below the table: "Missing mandatory headings: None".
+		If all mandatory headers are present, then it injects the following message below the table: "Missing mandatory headings: None".
+		If there are missing headers, then it injects a table with missed mandatory headers below the "check table".
 
-	If there are missing headers, then it injects a table with missed mandatory headers below the "check table".
 
-
-**What PuMa does not do:**
+PuMa does not check:
 	PuMa does not check the validity of subheaders. This task should be done manually.
 
 
-9. Figures
-==========
+10. Figures
+===========
 
 Since "figures" code of article page is not standardised and greatly varies from vendor to vendor, "Figures check" is presented as interface, which speeds up and simplifies manual checking. 
 
 TO RUN FIGURES CHECK, CLICK ON FIGURES TAB.
 
-**What PuMa does:**
+PuMa checks:
 	PuMa tries to match Figure callouts with Figure IDs.
 
 		If each Figure has at least one figure callout, then it injects the message that number of missing callouts and figures equals to zero.
@@ -197,10 +204,10 @@ TO RUN FIGURES CHECK, CLICK ON FIGURES TAB.
 	PuMa groups together figure and corresponding callouts on a "tile". So you can check both figure and callouts agains PuMa standards. It also shows all text lines where word "figure" was found (so that you can check whether that "figure" word is part of incorrectly formatted callout).
 
 
-What PuMa does not do:
+PuMa does not check:
 	It does not do any of the Figues checks except for matching callouts with Figure IDs.
 
-10. Tables
+11. Tables
 ===========
 Since "tables" code of article page is not standardised and greatly varies from vendor to vendor, "tables check" is presented as interface, which speeds up and simplifies manual checking. 
 
@@ -208,7 +215,7 @@ Note: table header in the test should be above the table itself. However, due to
 
 TO RUN TABLES CHECK, CLICK ON TABLES TAB.
 
-**What PuMa does:**
+PuMa checks:
 	PuMa tries to match Table callouts with Table IDs.
 
 		If each Table has at least one table callout, then it injects the message that number of missing callouts and tables equals to zero.
@@ -221,27 +228,27 @@ TO RUN TABLES CHECK, CLICK ON TABLES TAB.
 	PuMa groups together table and corresponding callouts on a "tile". So you can check both figure and callouts agains PuMa standards. It also shows all text lines where word "table" was found (so that you can check whether that "table" word is part of incorrectly formatted callout).
 
 
-What PuMa does not do:
+PuMa does not check:
 	It does not do any of the Table checks except for matching callouts with Table IDs.
 	
 
-11. Suppl. Materials
+12. Suppl. Materials
 ====================
 
 TO RUN TABLES CHECK, CLICK ON TABLES TAB.
 
-**What PuMa does:**
+PuMa checks:
 	PuMa puts all the lines containing "Supplementary" word on the tab. The idea is to have all callouts to supplementary materials on one tab, so that you can manually match them with supplementary files.
 
-**What PuMa does not do:**
+PuMa does not check:
 	PuMa does not make any checks related to supplementary materials. All the checks should be done manually.
 
 
 
-12. References
+13. References
 ==============
 
-**What PuMa does:**
+PuMa checks:
 	PuMa tries to find duplicate references. 
 
 		If no duplicates are found, it injects the message "No duplicate references found" right below the "References" header.
@@ -287,7 +294,7 @@ TO RUN TABLES CHECK, CLICK ON TABLES TAB.
 	PuMa marks all instances of [PII] and [Internet] in amber.
 
 	
-**What PuMa does not do:**
+PuMa does not check:
 	PuMa does not check books, report and websites references.
 
 	PuMa does not check "Ahead of print" references (however, certain elements can be marked in green correctly as a side effect of other checks).
@@ -295,9 +302,5 @@ TO RUN TABLES CHECK, CLICK ON TABLES TAB.
 	PuMa does not check anything described in "References: General Checks" section of the PubMed standards (except for [PII] and [INTERNET]).
 
 	PuMa does not check title of the article in the reference.
-
-
-
-
 
 
