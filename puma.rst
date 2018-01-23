@@ -137,6 +137,14 @@ PuMa checks:
 		Otherwise it injects en error message in amber to the page.
 
 
+	.. image:: /_static/puma_abbreviations_green.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+
+	.. image:: /_static/puma_abbreviations_amber.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+
 PuMa does not check:
 	PuMa does not check the case or spelling of abbreviations.
 
