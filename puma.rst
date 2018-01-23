@@ -207,6 +207,20 @@ PuMa checks:
 		If there are missing headers, then it injects a table with missed mandatory headers below the "check table".
 
 
+	.. image:: /_static/puma_headers_tab.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+	|
+
+	.. image:: /_static/puma_headers_issue.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+	|
+	.. image:: /_static/puma_headers_issue2.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+
+
 PuMa does not check:
 	PuMa does not check the validity of subheaders. This task should be done manually.
 
