@@ -217,6 +217,7 @@ PuMa checks:
 	   :scale: 50%
 	   :alt: PuMa Interface
 	|
+	
 	.. image:: /_static/puma_headers_issue2.png
 	   :scale: 50%
 	   :alt: PuMa Interface
@@ -250,6 +251,7 @@ PuMa checks:
 	   :scale: 50%
 	   :alt: PuMa Interface
 |
+
 	.. image:: /_static/puma_figures_tab_error.png
 	   :scale: 50%
 	   :alt: PuMa Interface
@@ -298,7 +300,7 @@ PuMa checks:
 	.. image:: /_static/puma_supplementary.png
 		:scale: 50%
 		:alt: PuMa Interface
-		
+
 
 PuMa does not check:
 	PuMa does not make any checks related to supplementary materials. All the checks should be done manually.
