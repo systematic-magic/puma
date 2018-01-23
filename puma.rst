@@ -245,6 +245,11 @@ PuMa checks:
 	PuMa groups together figure and corresponding callouts on a "tile". So you can check both figure and callouts agains PuMa standards. It also shows all text lines where word "figure" was found (so that you can check whether that "figure" word is part of incorrectly formatted callout).
 
 
+	.. image:: /_static/puma_tables_tab.png
+	   :scale: 50%
+	   :alt: PuMa Interface
+
+
 PuMa does not check:
 	It does not do any of the Figues checks except for matching callouts with Figure IDs.
 
