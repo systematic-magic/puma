@@ -246,22 +246,16 @@ PuMa checks:
 	PuMa groups together figure and corresponding callouts on a "tile". So you can check both figure and callouts agains PuMa standards. It also shows all text lines where word "figure" was found (so that you can check whether that "figure" word is part of incorrectly formatted callout).
 
 
-	.. image:: /_static/puma_figures_tab_anime.gif
-	   :scale: 50%
-	   :alt: PuMa Interface
-
 	.. image:: /_static/puma_figures_tab.png
 	   :scale: 50%
 	   :alt: PuMa Interface
-
+|
 	.. image:: /_static/puma_figures_tab_error.png
 	   :scale: 50%
 	   :alt: PuMa Interface
 
-
-
 PuMa does not check:
-	It does not do any of the Figues checks except for matching callouts with Figure IDs.
+	It does not make any of the Figues checks except for matching callouts with Figure IDs.
 
 11. Tables
 ===========
@@ -283,6 +277,10 @@ PuMa checks:
 
 	PuMa groups together table and corresponding callouts on a "tile". So you can check both figure and callouts agains PuMa standards. It also shows all text lines where word "table" was found (so that you can check whether that "table" word is part of incorrectly formatted callout).
 
+	.. image:: /_static/puma_tables_tab.png
+		:scale: 50%
+		:alt: PuMa Interface
+
 
 PuMa does not check:
 	It does not do any of the Table checks except for matching callouts with Table IDs.
@@ -295,6 +293,12 @@ TO RUN TABLES CHECK, CLICK ON TABLES TAB.
 
 PuMa checks:
 	PuMa puts all the lines containing "Supplementary" word on the tab. The idea is to have all callouts to supplementary materials on one tab, so that you can manually match them with supplementary files.
+	
+
+	.. image:: /_static/puma_supplementary.png
+		:scale: 50%
+		:alt: PuMa Interface
+		
 
 PuMa does not check:
 	PuMa does not make any checks related to supplementary materials. All the checks should be done manually.
