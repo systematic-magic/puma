@@ -126,7 +126,7 @@ PuMa checks:
 	   :scale: 50%
 	   :alt: PuMa Interface
 
-	.. image:: /_static/puma_keywords1.png
+	.. image:: /_static/puma_keywords2.png
 	   :scale: 50%
 	   :alt: PuMa Interface
 
