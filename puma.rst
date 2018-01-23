@@ -131,7 +131,7 @@ Functionality
 	If everything is correct, dates are marked in green. Otherwise in amber.
 
 
-6. Callouts vs references
+7. Callouts vs references
 =========================
 
 **What PuMa does:**
@@ -143,7 +143,7 @@ Functionality
 	formatting) errors in callouts:" and specifies problem callouts.
 
 
-7. Headers
+8. Headers
 ==========
 Headers is a check which appears in Tabs by default. Headers check is a table with all headers in the article.
 That table contains headers in the same format and case, as presented in the article itself.
@@ -169,12 +169,74 @@ That table contains headers in the same format and case, as presented in the art
 	PuMa does not check the validity of subheaders. This task should be done manually.
 
 
-7. Figures
+9. Figures
 ==========
 
 Since "figures" code of article page is not standardised and greatly varies from vendor to vendor, "Figures check" is presented as interface, which speeds up and simplifies manual checking. 
 
+TO RUN FIGURES CHECK, CLICK ON FIGURES TAB.
+
 **What PuMa does:**
+	PuMa tries to match Figure callouts with Figure IDs.
+
+		If each Figure has at least one figure callout, then it injects the message that number of missing callouts and figures equals to zero.
+
+		Otherwise, it injects a message with numbers of missed callouts and/or figures.
+
+		Note: there are cases when figure callouts span a range (for example Figures 1-3). In this case if there is no callout for Figure 2, then this check will inject an error message that callout for table 2 is missing. Please keep in mind such cases when checking missed callouts.
+
+
+	PuMa groups together figure and corresponding callouts on a "tile". So you can check both figure and callouts agains PuMa standards. It also shows all text lines where word "figure" was found (so that you can check whether that "figure" word is part of incorrectly formatted callout).
+
+
+What PuMa does not do:
+	It does not do any of the Figues checks except for matching callouts with Figure IDs.
+
+10. Tables
+===========
+Since "tables" code of article page is not standardised and greatly varies from vendor to vendor, "tables check" is presented as interface, which speeds up and simplifies manual checking. 
+
+Note: table header in the test should be above the table itself. However, due to the page code issues, you will find table header below the table in the tables check. This is by design behaviour.
+
+TO RUN TABLES CHECK, CLICK ON TABLES TAB.
+
+**What PuMa does:**
+	PuMa tries to match Table callouts with Table IDs.
+
+		If each Table has at least one table callout, then it injects the message that number of missing callouts and tables equals to zero.
+
+		Otherwise, it injects a message with numbers of missed callouts and/or tables.
+
+		Note: there are cases when table callouts span a range (for example Tables 1-3). In this case if there is no callout for Figure 2, then this check will inject an error message that callout for table 2 is missing. Please keep in mind such cases when checking missed callouts.
+
+
+	PuMa groups together table and corresponding callouts on a "tile". So you can check both figure and callouts agains PuMa standards. It also shows all text lines where word "table" was found (so that you can check whether that "table" word is part of incorrectly formatted callout).
+
+
+What PuMa does not do:
+	It does not do any of the Table checks except for matching callouts with Table IDs.
+	
+
+11. Suppl. Materials
+====================
+
+TO RUN TABLES CHECK, CLICK ON TABLES TAB.
+
+**What PuMa does:**
+	PuMa puts all the lines containing "Supplementary" word on the tab. The idea is to have all callouts to supplementary materials on one tab, so that you can manually match them with supplementary files.
+
+**What PuMa does:**
+	PuMa does not make any checks related to supplementary materials. All the checks should be done manually.
+
+
+
+12. References
+==============
+
+
+
+
+
 
 
 
