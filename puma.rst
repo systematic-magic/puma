@@ -360,6 +360,12 @@ PuMa checks:
 			If journal is written incorrectly (or is not indexed by PubMed), then PuMa will make a suggestion regarding correct spelling. In this case journal title will be marked in dark yellow.
 
 			If journal title was found on the PubMed, then PuMa will mark it in green.
+		
+
+		.. image:: /_static/puma_references.png
+		:scale: 50%
+		:alt: PuMa Interface
+
 
 		PuMa checks the format of citation data. 
 
@@ -370,9 +376,6 @@ PuMa checks:
 	PuMa marks all instances of [PII] and [Internet] in amber.
 
 
-	
-
-	
 PuMa does not check:
 	PuMa does not check books, report and websites references.
 
