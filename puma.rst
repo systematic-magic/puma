@@ -143,8 +143,8 @@ PuMa checks:
 
 
 	.. image:: /_static/puma_abbreviations_amber.png
-	   :scale: 50%
-	   :alt: PuMa Interface
+		   :scale: 50%
+		   :alt: PuMa Interface
 
 PuMa does not check:
 	PuMa does not check the case or spelling of abbreviations.
@@ -174,12 +174,12 @@ PuMa checks:
 		Otherwise, it injects a message with numbers of missed callouts and/or references.
 
 	.. image:: /_static/puma_callouts_format_error.png
-	   :scale: 50%
-	   :alt: PuMa Interface
+		   :scale: 50%
+		   :alt: PuMa Interface
 
 	.. image:: /_static/puma_callouts_format_sample.png
-	   :scale: 50%
-	   :alt: PuMa Interface
+		   :scale: 50%
+		   :alt: PuMa Interface
 
 
 
@@ -209,18 +209,18 @@ PuMa checks:
 
 
 	.. image:: /_static/puma_headers_tab.png
-	   :scale: 50%
-	   :alt: PuMa Interface
+		   :scale: 50%
+		   :alt: PuMa Interface
 	|
 
 	.. image:: /_static/puma_headers_issue.png
-	   :scale: 50%
-	   :alt: PuMa Interface
+		   :scale: 50%
+		   :alt: PuMa Interface
 	|
 
 	.. image:: /_static/puma_headers_issue2.png
-	   :scale: 50%
-	   :alt: PuMa Interface
+		   :scale: 50%
+		   :alt: PuMa Interface
 
 
 PuMa does not check:
@@ -248,13 +248,13 @@ PuMa checks:
 
 
 	.. image:: /_static/puma_figures_tab.png
-	   :scale: 50%
-	   :alt: PuMa Interface
+		   :scale: 50%
+		   :alt: PuMa Interface
 |
 
 	.. image:: /_static/puma_figures_tab_error.png
-	   :scale: 50%
-	   :alt: PuMa Interface
+		   :scale: 50%
+		   :alt: PuMa Interface
 
 PuMa does not check:
 	It does not make any of the Figues checks except for matching callouts with Figure IDs.
@@ -318,16 +318,16 @@ PuMa checks:
 		Otherwise, it injects a message with duplicate reference numbers.
 
 		.. image:: /_static/puma_duplicate_refs.png
-		:scale: 50%
-		:alt: PuMa Interface
+			:scale: 50%
+			:alt: PuMa Interface
 
 		.. image:: /_static/puma_duplicate_refs_ex1.png
-		:scale: 50%
-		:alt: PuMa Interface
+			:scale: 50%
+			:alt: PuMa Interface
 
 		.. image:: /_static/puma_duplicate_refs_ex2.png
-		:scale: 50%
-		:alt: PuMa Interface
+			:scale: 50%
+			:alt: PuMa Interface
 
 
 	PuMa cheks Author list:
@@ -363,8 +363,8 @@ PuMa checks:
 		
 
 		.. image:: /_static/puma_references.png
-		:scale: 50%
-		:alt: PuMa Interface
+			:scale: 50%
+			:alt: PuMa Interface
 
 
 		PuMa checks the format of citation data. 
