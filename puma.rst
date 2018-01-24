@@ -397,4 +397,5 @@ PuMa does not check:
 
 
 
-.. _here: https://chrome.google.com/webstore/detail/bifmbjiaohoflalhjehbcgjeghfafbah/publish-delayed?authuser=2
+.. _here: https://chrome.google.com/webstore/detail/pubmed-tool-puma/bifmbjiaohoflalhjehbcgjeghfafbah?authuser=2
+          
